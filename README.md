@@ -6,6 +6,7 @@ A futuristic cyberpunk DApp that combines **AI**, **synthetic biology**, and **b
 
 ![Deploy to Streamlit](https://img.shields.io/badge/Deploy-Streamlit-blueviolet?logo=streamlit)
 ![Polygon Mumbai](https://img.shields.io/badge/Blockchain-Polygon_Mumbai-purple?logo=ethereum)
+![Polygon Shanghai](https://img.shields.io/badge/Deploy-Shanghai-blueviolet?logo=streamlit)
 ![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Made with Python](https://img.shields.io/badge/Made%20with-Python-3776AB?logo=python)
 
@@ -15,9 +16,9 @@ A futuristic cyberpunk DApp that combines **AI**, **synthetic biology**, and **b
 
 - 🔍 **Input a DNA sequence and gene** — receive AI-predicted top 3 gRNAs.
 - 📈 **Visualize** off-target risk and efficiency scores.
-- 🔗 **Record gRNA results on-chain** via Metamask (Polygon Mumbai).
+- 🔗 **Record gRNA results on-chain** via Metamask.
 - 🧾 **Real-time dashboard** for gene frequency, top scorers, and submission analytics.
-- 🧬 Streamlined interface with **cyberpunk-themed animation** (anime.js).
+- 🧬 Streamlined interface with **cyberpunk-themed animation**.
 
 ---
 
@@ -25,16 +26,10 @@ A futuristic cyberpunk DApp that combines **AI**, **synthetic biology**, and **b
 
 | Layer       | Tech                                |
 |------------|-------------------------------------|
-| Frontend    | Streamlit, HTML, CSS, JS, Anime.js |
+| Frontend    | Streamlit, HTML, CSS, JS,          |
 | Backend     | PyTorch, Biopython, GNN inference  |
 | Blockchain  | Solidity, Web3.py, Metamask        |
 | Hosting     | GitHub Pages / Vercel + Streamlit  |
-
----
-
-## 🎥 Walkthrough
-
-<img src="static/images/demo.gif" width="100%" alt="App Demo"/>
 
 ---
 
@@ -70,15 +65,9 @@ Make sure you have:
 
 ---
 
-## 📊 Dashboard View
-
-<img src="static/images/dashboard-preview.png" width="100%" />
-
----
-
 ## 🔗 Blockchain
 
-- Chain: Polygon Mumbai
+- Chain: Polygon Mumbai/ Shanghai
 - Contract: `0xYourDeployedContractAddress`
 - ABI: stored in `blockchain/abi.json`
 
@@ -109,11 +98,9 @@ python model/train.py
 | ✅   | Deploy Solidity smart contract to Mumbai |
 | ✅   | Store contract address + ABI |
 | ✅   | Create Streamlit UI (Metamask-ready) |
-| ✅   | Add anime.js animations + CSS |
-| ✅   | Build dashboard page |
 | ✅   | Push to GitHub |
 | 💜   | Deploy Streamlit app on [Streamlit Cloud](https://streamlit.io/cloud) |
-| 💜   | Deploy frontend (metamask component + HTML) on [Vercel](https://vercel.com/) |
+| 💜   | Deploy frontend (metamask component + HTML) |
 | 💜   | Announce 🚀 on Twitter / DevPost / BioHackathon |
 
 ---
@@ -134,9 +121,8 @@ For major changes, open an issue first to discuss what you want to change. Contr
 
 ## 🙌 Credits
 
-- Open gRNA Efficiency Data: [CRISPR Knockout Consortium](https://github.com/CRISPR)
+- Open gRNA Efficiency Data: [CRISPR Knockout Consortium](https://github.com)
 - Animation Engine: [anime.js](https://animejs.com)
-- Blockchain Infra: [Polygon Mumbai](https://mumbai.polygonscan.com/)
 - Made with ❤️ in Python + Web3
 
 ---
