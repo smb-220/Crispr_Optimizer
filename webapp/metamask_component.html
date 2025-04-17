@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <style>
+    button {
+      background-color: #0ff;
+      color: #000;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Sign and store gRNA via Metamask</h3>
+  <button onclick="sendTransaction()">Send via Metamask</button>
+  <p id="status"></p>
+
+  <script>
+    async function sendTransaction() {
+      if (typeof window.ethereum === 'undefined') {
+        document.getElementById("status").innerText = "Install Metamask first.";
+        return;
+      }
+
+      const web3 = new Web3(window.ethereum);
+      await window.ethereum.enable();
+      const accounts = await web3.eth.getAccounts();
+      const contractAddress = "{{contract_address}}";
+      const abi = []; // Replace with the actual ABI JSON array or import it dynamically
+
+      const contract = new web3.eth.Contract(abi, contractAddress);
+
+      const seq = "{{sequence}}";
+      const gene = "{{gene}}";
+      const transactionScore = 100; // Replace 100 with the actual integer value or a valid variable
+
+      try {
+        await contract.methods.storeEntry(seq, gene, transactionScore).send({from: accounts[0]});
+        document.getElementById("status").innerText = "✅ Transaction complete!";
+      } catch (err) {
+        document.getElementById("status").innerText = "❌ Transaction failed.";
+        console.error(err);
+      }
+    }
+  </script>
+</body>
+</html>
