@@ -1,8 +1,8 @@
 # 🧬 CRISPR-AI: Web3-Enhanced gRNA Optimizer
 
-A futuristic cyberpunk DApp that combines **AI**, **synthetic biology**, and **blockchain** to design and store **high-efficiency CRISPR guide RNAs (gRNAs)** with **zero off-target risks**.
+A futuristic DApp that combines **AI**, **synthetic biology**, and **blockchain** to design and store **high-efficiency CRISPR guide RNAs (gRNAs)** with **zero off-target risks**.
 
-> Powered by: Deep Learning + GNNs | Streamlit | Solidity | Metamask | Anime.js
+> Powered by: Deep Learning + GNNs | Streamlit | Solidity | Metamask
 
 ![Deploy to Streamlit](https://img.shields.io/badge/Deploy-Streamlit-blueviolet?logo=streamlit)
 ![Polygon Mumbai](https://img.shields.io/badge/Blockchain-Polygon_Mumbai-purple?logo=ethereum)
